@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/mainRearCameraView"
+        android:keepScreenOn="true"
+        app:cameraFacing="back"
+        app:cameraFlash="off"
+        app:cameraHdr="on"
+        app:cameraAudio="off"
+        app:cameraPreview="glSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.otaliastudios.cameraview.CameraView>
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/mainFrontCameraView"
+        android:keepScreenOn="true"
+        app:cameraFacing="front"
+        app:cameraFlash="off"
+        app:cameraHdr="on"
+        app:cameraAudio="off"
+        app:cameraPreview="glSurface"
+        android:layout_alignParentBottom="true"
+        android:layout_width="196dp"
+        android:layout_height="128dp">
+
+    </com.otaliastudios.cameraview.CameraView>
+
+</RelativeLayout>
